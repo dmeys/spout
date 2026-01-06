@@ -10,7 +10,7 @@ namespace Box\Spout\Common;
  */
 trait Singleton
 {
-    protected static $instance;
+    public static $instance;
 
     /**
      * @return static
@@ -36,6 +36,6 @@ trait Singleton
      */
     protected function init() {}
 
-    private function __wakeup() {}
-    private function __clone() {}
+    public function __wakeup() {}
+    public function __clone() {}
 }
